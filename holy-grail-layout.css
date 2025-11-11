@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -7,68 +8,102 @@
 html, body {
   height: 100%;
   font-family: "Poppins", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #fff;
   color: #333;
 }
 
-/* Struttura principale */
+/* PAGE CONTAINER */
 .page {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Header e Footer */
+/* HEADER E FOOTER */
 header {
-  background-color: red; /* rosso */
+  background-color: red;
   color: white;
   text-align: center;
-  padding: 1rem;
 }
 
 footer {
-  background-color: aqua; /* acqua */
-  color: #000;
+  background-color: aqua;
+  color: black;
   text-align: center;
-  padding: 1rem;
 }
 
-/* Contenitore centrale (Holy Grail) */
+
 .holy-grail {
   display: flex;
   flex: 1;
-  padding: 1rem;
-  gap: 1rem;
+  flex-wrap: nowrap; 
+  width: 100%;
 }
 
-/* Sidebar sinistra e destra */
-.left {
-  flex: 0 0 200px;
-  background-color: beige; /* beige */
-  padding: 1rem;
+
+.left, .right, main {
+  flex: 0 0 auto;
 }
+
+
+.left {
+  background-color: beige;
+  flex-basis: 200px;   
+}
+
 
 .right {
-  flex: 0 0 200px;
-  background-color: green; /* verde */
+  background-color: green;
   color: white;
-  padding: 1rem;
+  flex-basis: 200px;  
 }
 
-/* Contenuto principale */
+
 main {
-  flex: 1;
-  background-color: white; /* bianco */
-  padding: 1rem;
+  background-color: white;
+  flex: 1 1 auto;    
 }
 
-@media (max-width: 900px) {
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .holy-grail {
+    flex-wrap: wrap;      
+  }
+
+  main {
+    order: 1;
+    flex-basis: 100%;    
+  }
+
+  .left {
+    order: 2;
+    flex-basis: 50%;  
+  }
+
+  .right {
+    order: 3;
+    flex-basis: 50%;  
+  }
+}
+
+/* Mobile <600px */
+@media (max-width: 599px) {
   .holy-grail {
     flex-direction: column;
   }
 
-  .left, .right {
-    flex: 0 0 auto;
-    width: 100%;
+  main { order: 1; flex-basis: 100%; }
+  .left { order: 2; flex-basis: 100%; }
+  .right { order: 3; flex-basis: 100%; }
+}
+
+/* Desktop >900px */
+@media (min-width: 901px) {
+  .holy-grail {
+    flex-wrap: nowrap;
   }
+
+  .left { order: 1; flex-basis: 200px; }
+  main { order: 2; flex: 1 1 auto; }
+  .right { order: 3; flex-basis: 200px; }
 }
