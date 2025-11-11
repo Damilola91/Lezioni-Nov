@@ -1,0 +1,76 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+header {
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  background-color: aqua;
+  color: black;
+  text-align: center;
+}
+
+
+.holy-grail {
+  display: grid;
+  width: 100%;
+  gap: 0;
+}
+
+
+@media (min-width: 901px) {
+  .holy-grail {
+    grid-template-columns: 200px 1fr 200px; /* left | main | right */
+    grid-template-rows: 1fr;
+  }
+
+  .left { grid-column: 1; grid-row: 1; background-color: beige; }
+  main { grid-column: 2; grid-row: 1; background-color: white; }
+  .right { grid-column: 3; grid-row: 1; background-color: green; color: white; }
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .holy-grail {
+    grid-template-columns: 1fr 1fr;  /* due colonne per left+right */
+    grid-template-rows: auto auto;  /* main prima riga, left+right seconda */
+  }
+
+  main { grid-column: 1 / -1; grid-row: 1; background-color: white; }
+  .left { grid-column: 1; grid-row: 2; background-color: beige; }
+  .right { grid-column: 2; grid-row: 2; background-color: green; color: white; }
+}
+
+
+@media (max-width: 599px) {
+  .holy-grail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  main { grid-column: 1; grid-row: 1; background-color: white; }
+  .left { grid-column: 1; grid-row: 2; background-color: beige; }
+  .right { grid-column: 1; grid-row: 3; background-color: green; color: white; }
+}
