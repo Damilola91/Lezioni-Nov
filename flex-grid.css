@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fafafa;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #006c5f;
+}
+
+.main-nav a:hover {
+  color: #004d40;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+}
+
+.nav-toggle-label span {
+  display: block;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+.holy-grail {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex: 1;
+}
+
+.holy-grail > .left,
+.holy-grail > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar, .content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h1 {
+  color: #4caf50;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p, li {
+  margin-bottom: 0.8rem;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: #4caf50;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.site-footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem 0;
+  flex-shrink: 0; 
+  margin-top: auto; 
+}
+
+
+@media (max-width: 1024px) {
+  .holy-grail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "left content"
+      "right right";
+    gap: 1.5rem;
+  }
+
+  .left {
+    grid-area: left;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .right {
+    grid-area: right;
+  }
+
+
+  .left, .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    justify-content: space-between;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    display: none;
+    gap: 0;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 60px;
+    right: 1rem;
+    z-index: 999;
+  }
+
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + ul {
+    display: flex;
+  }
+
+  .holy-grail {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .left, .content, .right {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .logo {
+    height: 50px;
+  }
+
+  .book-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
