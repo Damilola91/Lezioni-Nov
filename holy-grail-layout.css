@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Struttura principale */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header e Footer */
+header {
+  background-color: red; /* rosso */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer {
+  background-color: aqua; /* acqua */
+  color: #000;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Contenitore centrale (Holy Grail) */
+.holy-grail {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+/* Sidebar sinistra e destra */
+.left {
+  flex: 0 0 200px;
+  background-color: beige; /* beige */
+  padding: 1rem;
+}
+
+.right {
+  flex: 0 0 200px;
+  background-color: green; /* verde */
+  color: white;
+  padding: 1rem;
+}
+
+/* Contenuto principale */
+main {
+  flex: 1;
+  background-color: white; /* bianco */
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .holy-grail {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
