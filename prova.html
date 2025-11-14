@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Funzioni JavaScript</title>
+  </head>
+  <body>
+    <h1>Test delle funzioni JavaScript</h1>
+
+    <section>
+      <h2>Saluta Nomi</h2>
+      <button onclick="salutaNomi(names2)">Saluta Nomi</button>
+    </section>
+
+    <section>
+      <h2>Mostra Studente</h2>
+      <button onclick="alert(studente.nome + ' ha preso ' + studente.voto)">
+        Mostra Studente
+      </button>
+    </section>
+
+    <section>
+      <h2>Parola in Maiuscolo</h2>
+      <input id="parola" type="text" placeholder="Scrivi una parola" />
+      <button
+        onclick="console.log(inMaiuscolo(document.getElementById('parola').value))"
+      >
+        Converti
+      </button>
+    </section>
+
+    <section>
+      <h2>Quadrati dei numeri da 1 a 10</h2>
+      <button onclick="stampaQuadrati()">Mostra Quadrati</button>
+      <div id="quadrati-container" style="margin-top: 10px"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
