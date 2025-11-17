@@ -21,9 +21,6 @@ UserGenerator/
 ├── userGenerator.css # Stili semplici (opzionale)
 └── userGenerator.js # Logica dell’app
 
-yaml
-Copia codice
-
 ---
 
 ## 🧱 Funzionalità principali
