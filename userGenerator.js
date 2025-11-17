@@ -13,7 +13,7 @@ const calculateCategory = (job) => {
   }
 };
 
-const creaUtente = (name, age, job = "not specified") => ({
+const createUser = (name, age, job = "not specified") => ({
   name,
   age,
   job,
@@ -65,7 +65,7 @@ const addUser = () => {
     return;
   }
 
-  const newUser = creaUtente(name, age, job);
+  const newUser = createUser(name, age, job);
   users.push(newUser);
 
   console.log(sendMessageToUser(newUser));
