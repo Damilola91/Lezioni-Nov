@@ -57,3 +57,52 @@ const stampaQuadrati = () => {
     container.appendChild(div);
   }
 };
+
+//Ciclo for of meglio del ciclo For classico e vale solo per array e stringhe
+
+let colori = ["red", "green", "blue", "yellow", "purple"];
+
+for (let elem of colori) {
+  console.log("Color: " + elem);
+}
+
+//Ciclo for in meglio del ciclo For classico e vale per oggetti
+
+const automobile = {
+  marca: "Toyota",
+  modello: "Corolla",
+  anno: 2020,
+  isAvailable: true,
+};
+
+for (let key in automobile) {
+  console.log(key + ": " + automobile[key]);
+}
+
+//Calcolatrice
+
+const calcola = () => {
+  const num1 = Number(document.getElementById("num1").value);
+  const num2 = Number(document.getElementById("num2").value);
+  const operation = document.getElementById("operation").value;
+  let result;
+
+  switch (operation) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num2 !== 0 ? num1 / num2 : "Error: Division by zero";
+      break;
+
+    default:
+      result = "Error: Invalid operation";
+  }
+  document.getElementById("result").textContent = "Result: " + result;
+};
