@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Generator</title>
+    <link rel="stylesheet" href="./userGenerator.css" />
+  </head>
+  <body>
+    <h1>User Generator</h1>
+
+    <div class="container">
+      <input id="name" placeholder="Name" />
+      <input id="age" type="number" placeholder="Age" />
+      <input id="job" placeholder="Job" />
+
+      <button id="add">Add User</button>
+      <button id="filter">Filter User</button>
+
+      <h2>User List</h2>
+      <div id="user-list"></div>
+
+      <h2>Filtered Users</h2>
+      <div id="filtered"></div>
+    </div>
+    <script src="./userGenerator.js"></script>
+  </body>
+</html>

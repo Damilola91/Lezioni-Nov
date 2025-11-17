@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Fredericka+the+Great&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&display=swap');
+
+body {
+    font-family: 'Inknut Antiqua', serif;
+    padding: 20 px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.user-card {
+  background: #eaeaea;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+}
