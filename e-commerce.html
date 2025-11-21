@@ -8,24 +8,31 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar-left">
-        <a href="#" class="brand">Black Market</a>
-        <a href="#" id="red-items">SmartPhone</a>
-        <a href="#" id="green-items">Green Items</a>
+    <header class="site-header">
+      <div class="header-top">
+        <h1>Black Market</h1>
+        <p>Il meglio dei prodotti tipici</p>
       </div>
-      <div class="navbar-right">
-        <div class="cart-icon" id="cartBtn">
-          <ion-icon name="cart-outline"></ion-icon>
-          <span id="counter">0</span>
-          <span id="favoritesCounter">0</span>
+
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a href="#" class="brand">Black Market</a>
+          <a href="#" id="red-items">Street Food</a>
+          <a href="#" id="green-items">Dolci</a>
         </div>
-        <form id="searchForm">
-          <input type="text" id="allProducts" placeholder="Search..." />
-          <button type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
+        <div class="navbar-right">
+          <div class="cart-icon" id="cartBtn">
+            <ion-icon name="cart-outline"></ion-icon>
+            <span id="counter">0</span>
+            <span id="favoritesCounter">0</span>
+          </div>
+          <form id="searchForm">
+            <input type="text" id="allProducts" placeholder="Search..." />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </header>
 
     <main>
       <section id="prodotti" class="product-grid"></section>
