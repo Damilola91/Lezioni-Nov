@@ -4,6 +4,7 @@ body {
   background-color: #dda15e;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -36,31 +37,32 @@ body {
   gap: 20px;
 }
 
-/* --- Carrello e contatori --- */
+/* CART ICON & COUNTERS */
 .cart-icon {
-  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 12px; /* spazio tra icona e contatori */
+  gap: 8px; /* spazio tra icona e counter */
+  cursor: pointer;
 }
 
 .cart-icon ion-icon {
   font-size: 1.8em;
 }
 
-.cart-icon .counters {
-  display: flex;
-  align-items: center;
-  gap: 6px; /* spazio tra i due badge */
-}
-
-#counterSpan,
-#favoritesCounter {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+/* Counter del carrello */
+#counter {
   background-color: red;
   color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 0.75em;
+  font-weight: bold;
+}
+
+/* Counter preferiti */
+#favoritesCounter {
+  background-color: gold;
+  color: #333;
   border-radius: 50%;
   padding: 3px 7px;
   font-size: 0.75em;
@@ -68,11 +70,7 @@ body {
   border: 1px solid #333;
 }
 
-#favoritesCounter {
-  background-color: gold;
-  color: #333;
-}
-
+/* SEARCH FORM */
 form input {
   padding: 6px 10px;
   border-radius: 5px;
@@ -94,7 +92,7 @@ form button:hover {
   background-color: #d63b64;
 }
 
-/* --- Griglia prodotti --- */
+/* PRODUCT GRID */
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -102,6 +100,7 @@ form button:hover {
   padding: 20px;
 }
 
+/* CARD */
 .card {
   background: #fff;
   width: 260px;
@@ -145,6 +144,7 @@ form button:hover {
   color: #333;
 }
 
+/* DESCRIPTION con max 4 righe */
 .card .description {
   font-size: 0.9em;
   color: #444;
@@ -167,6 +167,7 @@ form button:hover {
   color: #d00000;
 }
 
+/* STAR */
 .star {
   position: absolute;
   top: 10px;
@@ -179,6 +180,7 @@ form button:hover {
   color: gold;
 }
 
+/* NUTRITION */
 .nutrition h4 {
   margin: 0;
   font-size: 0.95em;
@@ -191,6 +193,7 @@ form button:hover {
   font-size: 0.85em;
 }
 
+/* QUANTITY CONTROLS */
 .quantity-controls {
   display: flex;
   justify-content: center;
@@ -212,6 +215,7 @@ form button:hover {
   background-color: #ffb703;
 }
 
+/* CART SIDEBAR */
 .cart-sidebar {
   position: fixed;
   top: 0;

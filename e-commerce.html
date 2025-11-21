@@ -17,10 +17,8 @@
       <div class="navbar-right">
         <div class="cart-icon" id="cartBtn">
           <ion-icon name="cart-outline"></ion-icon>
-          <div class="counters">
-            <span id="counterSpan">0</span>
-            <span id="favoritesCounter">0</span>
-          </div>
+          <span id="counter">0</span>
+          <span id="favoritesCounter">0</span>
         </div>
         <form id="searchForm">
           <input type="text" id="allProducts" placeholder="Search..." />
@@ -47,7 +45,7 @@
       <h3>Cart</h3>
       <div id="cartContainer">
         <p>Quantity: <span id="cartItemCount">0</span></p>
-        <p>Total Price: £<span id="cartTotalPrice">0</span></p>
+        <p>Total Price: €<span id="cartTotalPrice">0</span></p>
         <div id="cartItems"></div>
         <button id="closeCartBtn">Close</button>
       </div>
@@ -61,6 +59,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
     <script type="module" src="./e-commerce.js"></script>
   </body>
 </html>

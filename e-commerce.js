@@ -94,7 +94,7 @@ const createCard = (product, container) => {
   const counterSpan = card.querySelector(".counter");
   const addToCartBtn = card.querySelector(".add-to-cart");
 
-  // ⭐ Preferiti
+  // Preferiti
   star.addEventListener("click", () => {
     const curr = memoryStar[product.id]?.isFavorite || false;
     if (!curr) memoryStar[product.id] = { product, isFavorite: true };
@@ -104,7 +104,7 @@ const createCard = (product, container) => {
     updateFavoritesCounter();
   });
 
-  // ➖ minus
+  // - / +
   minusBtn.addEventListener("click", () => {
     if ((allCounters[product.id] || 0) > 0) {
       allCounters[product.id]--;
@@ -116,7 +116,6 @@ const createCard = (product, container) => {
     }
   });
 
-  // ➕ plus
   plusBtn.addEventListener("click", () => {
     allCounters[product.id] = (allCounters[product.id] || 0) + 1;
     counterSpan.textContent = allCounters[product.id];
@@ -124,7 +123,6 @@ const createCard = (product, container) => {
     updateCartSummary();
   });
 
-  // 🛒 Add to cart
   addToCartBtn.addEventListener("click", () => {
     if (!allCounters[product.id] || allCounters[product.id] === 0) {
       allCounters[product.id] = 1;
@@ -136,7 +134,7 @@ const createCard = (product, container) => {
   });
 };
 
-// CREA CARDS NELLE SEZIONI
+// CREA CARDS
 products.forEach((p) => {
   createCard(p, prodotti);
   if (p.category === "Street Food") createCard(p, redContainer);
@@ -145,7 +143,7 @@ products.forEach((p) => {
   if (p.category === "Olio") createCard(p, greenSection);
 });
 
-// 🔍 Ricerca
+// Ricerca
 document.getElementById("searchForm").addEventListener("submit", (e) => {
   e.preventDefault();
   const q = document.getElementById("allProducts").value.toLowerCase();
@@ -160,7 +158,7 @@ document.getElementById("searchForm").addEventListener("submit", (e) => {
     .forEach((p) => createCard(p, prodotti));
 });
 
-// 🛒 Sidebar carrello
+// Sidebar carrello
 document
   .getElementById("cartBtn")
   .addEventListener("click", () => cartSidebar.classList.toggle("hidden"));
