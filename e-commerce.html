@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Black Market</title>
+    <link rel="stylesheet" href="./e-commerce.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a href="#" class="brand">Black Market</a>
+        <a href="#" id="red-items">SmartPhone</a>
+        <a href="#" id="green-items">Green Items</a>
+      </div>
+      <div class="navbar-right">
+        <div class="cart-icon" id="cartBtn">
+          <ion-icon name="cart-outline"></ion-icon>
+          <span id="counterSpan">
+            <span id="counter">0</span>
+          </span>
+          <span id="favoritesCounter">0</span>
+        </div>
+        <form id="searchForm">
+          <input type="text" id="allProducts" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main>
+      <section id="prodotti" class="product-grid"></section>
+
+      <section id="smartSection" class="product-section hidden">
+        <h2>SmartPhone</h2>
+        <div id="red" class="product-grid"></div>
+      </section>
+
+      <section id="greenSection" class="product-section hidden">
+        <h2>Green Items</h2>
+        <div id="green" class="product-grid"></div>
+      </section>
+    </main>
+
+    <aside id="cartSidebar" class="cart-sidebar hidden">
+      <h3>Cart</h3>
+      <div id="cartContainer">
+        <p>Quantity: <span id="cartItemCount">0</span></p>
+        <p>Total Price: £<span id="cartTotalPrice">0</span></p>
+        <div id="cartItems"></div>
+        <button id="closeCartBtn">Close</button>
+      </div>
+    </aside>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./e-commerce.js" type="module"></script>
+  </body>
+</html>
