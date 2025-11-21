@@ -1,15 +1,9 @@
-/* ========================= */
-/* RESET E BODY */
-/* ========================= */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #dda15e;
 }
 
-/* ========================= */
-/* NAVBAR */
-/* ========================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,41 +36,31 @@ body {
   gap: 20px;
 }
 
-/* ========================= */
-/* CART ICON + COUNTERS */
-/* ========================= */
+/* --- Carrello e contatori --- */
 .cart-icon {
-  position: relative;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px; /* spazio tra icona e contatori */
 }
 
 .cart-icon ion-icon {
   font-size: 1.8em;
 }
 
-/* Counter carrello */
-#counterSpan {
-  position: absolute;
-  top: -5px;
-  right: -12px;
-  background-color: red;
-  color: white;
-  border-radius: 50%;
-  padding: 3px 7px;
-  font-size: 0.75em;
-  font-weight: bold;
+.cart-icon .counters {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* spazio tra i due badge */
 }
 
-/* Counter preferiti */
+#counterSpan,
 #favoritesCounter {
-  position: absolute;
-  top: -5px;
-  right: -45px;
-  background-color: gold;
-  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  color: white;
   border-radius: 50%;
   padding: 3px 7px;
   font-size: 0.75em;
@@ -84,9 +68,11 @@ body {
   border: 1px solid #333;
 }
 
-/* ========================= */
-/* SEARCH FORM */
-/* ========================= */
+#favoritesCounter {
+  background-color: gold;
+  color: #333;
+}
+
 form input {
   padding: 6px 10px;
   border-radius: 5px;
@@ -108,16 +94,13 @@ form button:hover {
   background-color: #d63b64;
 }
 
-/* ========================= */
-/* PRODUCT GRID */
-/* ========================= */
+/* --- Griglia prodotti --- */
 .product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
 }
-
 
 .card {
   background: #fff;
@@ -165,19 +148,13 @@ form button:hover {
 .card .description {
   font-size: 0.9em;
   color: #444;
-
-  display: -webkit-box;        /* necessario per line-clamp */
+  display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden;            /* nasconde il testo in eccesso */
-  -webkit-line-clamp: 4;       /* massimo 4 righe con WebKit */
-  /* Proprietà standard (per futuro supporto) */
-  display: box;                /* fallback generico */
-  box-orient: vertical;
-  line-clamp: 4;               
-  text-overflow: ellipsis;     
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  text-overflow: ellipsis;
 }
-
-
 
 .category {
   font-size: 0.9em;
@@ -189,7 +166,6 @@ form button:hover {
   font-weight: bold;
   color: #d00000;
 }
-
 
 .star {
   position: absolute;
@@ -203,7 +179,6 @@ form button:hover {
   color: gold;
 }
 
-
 .nutrition h4 {
   margin: 0;
   font-size: 0.95em;
@@ -215,7 +190,6 @@ form button:hover {
   margin: 5px 0;
   font-size: 0.85em;
 }
-
 
 .quantity-controls {
   display: flex;

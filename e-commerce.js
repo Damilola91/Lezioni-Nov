@@ -138,7 +138,7 @@ const createCard = (product, container) => {
 
 // CREA CARDS NELLE SEZIONI
 products.forEach((p) => {
-  createCard(p, prodotti); // main container
+  createCard(p, prodotti);
   if (p.category === "Street Food") createCard(p, redContainer);
   if (p.category === "Conserve") createCard(p, greenContainer);
   if (p.category === "Dolci") createCard(p, smartSection);
