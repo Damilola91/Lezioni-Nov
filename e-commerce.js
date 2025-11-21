@@ -1,7 +1,5 @@
-// IMPORTA I PRODOTTI DAL FILE ESTERNO
 import { products } from "./product.js";
 
-// DOM elements
 const prodotti = document.getElementById("prodotti");
 const redContainer = document.getElementById("red");
 const greenContainer = document.getElementById("green");
@@ -141,10 +139,10 @@ const createCard = (product, container) => {
 // CREA CARDS NELLE SEZIONI
 products.forEach((p) => {
   createCard(p, prodotti); // main container
-  if (p.category === "Ortaggi") createCard(p, redContainer);
-  if (p.category === "Frutta secca") createCard(p, greenContainer);
-  if (p.category === "Formaggi") createCard(p, smartSection);
-  if (p.category === "Salumi") createCard(p, greenSection);
+  if (p.category === "Street Food") createCard(p, redContainer);
+  if (p.category === "Conserve") createCard(p, greenContainer);
+  if (p.category === "Dolci") createCard(p, smartSection);
+  if (p.category === "Olio") createCard(p, greenSection);
 });
 
 // 🔍 Ricerca
