@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: crypto.randomUUID(),
     name: "Cannolo Siciliano",
     description:
       "Il cannolo siciliano tradizionale è fatto con una cialda fritta a forma di tubo ripiena di ricotta di pecora, ma la farcitura può essere varia: dalla crema pasticciera alla chantilly, dalla ricotta di bufala alla crema di pistacchio al cioccolato.",
@@ -17,7 +17,7 @@ export const products = [
     },
   },
   {
-    id: 2,
+    id: crypto.randomUUID(),
     name: "Arancina",
     description:
       "L’arancina è una specialità siciliana a base di riso, ripiena di ragù, piselli e mozzarella, poi impanata e fritta, simbolo della cucina di strada.",
@@ -34,7 +34,7 @@ export const products = [
     },
   },
   {
-    id: 3,
+    id: crypto.randomUUID(),
     name: "Caponata Siciliana",
     description:
       "La caponata è un piatto siciliano a base di melanzane, pomodori, sedano, olive e capperi, il tutto condito con una salsa agrodolce.",
@@ -51,7 +51,7 @@ export const products = [
     },
   },
   {
-    id: 4,
+    id: crypto.randomUUID(),
     name: "Torta Setteveli",
     description:
       "Un dolce siciliano composto da sette strati: pan di spagna, crema gianduia, crema al cioccolato e nocciole, decorato con cioccolato fondente.",
@@ -68,7 +68,7 @@ export const products = [
     },
   },
   {
-    id: 5,
+    id: crypto.randomUUID(),
     name: "Caciocavallo Ragusano",
     description:
       "Il Caciocavallo Ragusano è un formaggio a pasta filata, originario della zona di Ragusa. Ha una consistenza elastica e un sapore delicato ma deciso, che diventa più intenso con la stagionatura.",
@@ -85,7 +85,7 @@ export const products = [
     },
   },
   {
-    id: 6,
+    id: crypto.randomUUID(),
     name: "Pane Ca' Meusa",
     description:
       "Panino tipico palermitano a base di polmone e milza di vitello, servito schiettu o maritatu con ricotta, secondo latradizione locale.",
@@ -102,7 +102,7 @@ export const products = [
     },
   },
   {
-    id: 7,
+    id: crypto.randomUUID(),
     name: "Granita al Limone",
     description:
       "Una delle granite siciliane più amate, fresca e acidula, preparata con limoni freschi.",
@@ -119,7 +119,7 @@ export const products = [
     },
   },
   {
-    id: 8,
+    id: crypto.randomUUID(),
     name: "Tuma",
     description:
       "La Tuma è un formaggio fresco siciliano, dal sapore delicato e leggermente acidulo. Viene preparata con latte di pecora, ma può essere prodotta anche con latte di mucca o capra.",
@@ -136,7 +136,7 @@ export const products = [
     },
   },
   {
-    id: 9,
+    id: crypto.randomUUID(),
     name: "Ricotta Siciliana",
     description:
       "La ricotta siciliana è un formaggio fresco, morbido e cremoso, prodotto con il siero di latte di pecora o di mucca. È un ingrediente essenziale nella cucina siciliana, usato sia nei piatti salati che in quelli dolci.",
@@ -153,7 +153,7 @@ export const products = [
     },
   },
   {
-    id: 10,
+    id: crypto.randomUUID(),
     name: "Olio Extravergine di Oliva Nocellara del Belice",
     description:
       "L'olio extravergine di oliva Nocellara del Belice è prodotto con la famosa varietà di olive Nocellara, tipica della zona occidentale della Sicilia. Questo olio ha un sapore fruttato, con una leggera nota di amaro e piccante.",
@@ -170,7 +170,7 @@ export const products = [
     },
   },
   {
-    id: 11,
+    id: crypto.randomUUID(),
     name: "Olio Extravergine di Oliva Biancolilla",
     description:
       "L'olio Biancolilla è un olio extravergine di oliva prodotto con l'omonima varietà di olive, prevalentemente coltivate nella zona centrale della Sicilia. Ha un sapore delicato, con leggere note fruttate e un gusto morbido.",
@@ -187,7 +187,7 @@ export const products = [
     },
   },
   {
-    id: 12,
+    id: crypto.randomUUID(),
     name: "Pomodori Secchi",
     description:
       "I pomodori secchi sono una prelibatezza siciliana, conservati sotto sale o olio d'oliva. Vengono essiccati al sole e possono essere usati come ingrediente in insalate, pasta, o come antipasto.",
@@ -204,7 +204,7 @@ export const products = [
     },
   },
   {
-    id: 13,
+    id: crypto.randomUUID(),
     name: "Salsa di Peperoncino",
     description:
       "La salsa di peperoncino siciliana è una conserva piccante fatta con peperoncini freschi, aglio, olio d'oliva, sale e aceto. È un condimento versatile che si abbina a piatti di pasta, carne o pesce.",
@@ -221,7 +221,7 @@ export const products = [
     },
   },
   {
-    id: 14,
+    id: crypto.randomUUID(),
     name: "Granita ai Gelsi",
     description:
       "Una granita siciliana dal sapore dolce e fruttato, preparata con gelsi freschi, tipica delle zone siciliane dove i gelsi sono coltivati.",
@@ -238,7 +238,7 @@ export const products = [
     },
   },
   {
-    id: 15,
+    id: crypto.randomUUID(),
     name: "Granita al Pistacchio",
     description:
       "Granita siciliana a base di pistacchi, dal sapore ricco e avvolgente.",
