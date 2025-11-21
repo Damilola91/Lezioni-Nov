@@ -69,13 +69,20 @@ export const products = [
   },
   {
     id: 5,
-    name: "Caciocavallo Ragusano DOP",
-    description: "",
+    name: "Caciocavallo Ragusano",
+    description:
+      "Il Caciocavallo Ragusano è un formaggio a pasta filata, originario della zona di Ragusa. Ha una consistenza elastica e un sapore delicato ma deciso, che diventa più intenso con la stagionatura.",
     price: 9.9,
     category: "Formaggi",
     img: "https://res.cloudinary.com/dbxysr1a6/image/upload/v1733741238/SICILIAN-TASTE-SERVER-UPLOADS/ragusano-dop.jpg",
     availableInStock: 100,
-    nutritionFacts: { calories: 0, carbs: 0, fat: 0, protein: 0, sugar: 0 },
+    nutritionFacts: {
+      calories: "320 kcal",
+      carbs: "0",
+      fat: "26",
+      protein: "22",
+      sugar: "0",
+    },
   },
   {
     id: 6,

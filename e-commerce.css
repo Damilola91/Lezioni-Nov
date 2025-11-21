@@ -118,9 +118,7 @@ form button:hover {
   padding: 20px;
 }
 
-/* ========================= */
-/* CARD PRODOTTO */
-/* ========================= */
+
 .card {
   background: #fff;
   width: 260px;
@@ -167,7 +165,19 @@ form button:hover {
 .card .description {
   font-size: 0.9em;
   color: #444;
+
+  display: -webkit-box;        /* necessario per line-clamp */
+  -webkit-box-orient: vertical;
+  overflow: hidden;            /* nasconde il testo in eccesso */
+  -webkit-line-clamp: 4;       /* massimo 4 righe con WebKit */
+  /* Proprietà standard (per futuro supporto) */
+  display: box;                /* fallback generico */
+  box-orient: vertical;
+  line-clamp: 4;               
+  text-overflow: ellipsis;     
 }
+
+
 
 .category {
   font-size: 0.9em;
@@ -180,9 +190,7 @@ form button:hover {
   color: #d00000;
 }
 
-/* ========================= */
-/* STELLINA PREFERITI */
-/* ========================= */
+
 .star {
   position: absolute;
   top: 10px;
@@ -195,9 +203,7 @@ form button:hover {
   color: gold;
 }
 
-/* ========================= */
-/* NUTRITION FACTS */
-/* ========================= */
+
 .nutrition h4 {
   margin: 0;
   font-size: 0.95em;
@@ -210,9 +216,7 @@ form button:hover {
   font-size: 0.85em;
 }
 
-/* ========================= */
-/* QUANTITY CONTROLS */
-/* ========================= */
+
 .quantity-controls {
   display: flex;
   justify-content: center;
@@ -234,9 +238,6 @@ form button:hover {
   background-color: #ffb703;
 }
 
-/* ========================= */
-/* CART SIDEBAR */
-/* ========================= */
 .cart-sidebar {
   position: fixed;
   top: 0;
