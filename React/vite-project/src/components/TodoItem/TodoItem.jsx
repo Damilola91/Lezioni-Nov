@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Checkbox from "../CheckBox";
+import Checkbox from "../CheckBox/CheckBox";
 import Button from "../Button/Button";
 import { Trash2, Pencil, Save, X } from "lucide-react";
 
