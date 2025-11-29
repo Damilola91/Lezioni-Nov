@@ -1,10 +1,11 @@
 import "./App.css";
 import TodoComponent from "./components/TodoComponent/TodoComponent";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 const App = () => {
   return (
     <>
-      <TodoComponent />
+      <Dashboard />
     </>
   );
 };
