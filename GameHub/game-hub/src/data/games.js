@@ -9,7 +9,7 @@ export const games = [
     rating: 9.5,
     status: "completed",
     hoursPlayed: 150,
-    difficulty: "Difficile",
+    difficulty: "Hard",
     coverUrl: "https://picsum.photos/300/400?random=1",
   },
   {
@@ -22,7 +22,7 @@ export const games = [
     rating: 8.2,
     status: "on-going",
     hoursPlayed: 35,
-    difficulty: "Medio",
+    difficulty: "Medium",
     coverUrl: "https://picsum.photos/300/400?random=2",
   },
   {
@@ -35,7 +35,7 @@ export const games = [
     rating: 7.4,
     status: "wishlist",
     hoursPlayed: 0,
-    difficulty: "Medio",
+    difficulty: "Medium",
     coverUrl: "https://picsum.photos/300/400?random=3",
   },
   {
@@ -48,7 +48,7 @@ export const games = [
     rating: 8.0,
     status: "completed",
     hoursPlayed: 40,
-    difficulty: "Difficile",
+    difficulty: "Hard",
     coverUrl: "https://picsum.photos/300/400?random=4",
   },
   {
@@ -61,7 +61,7 @@ export const games = [
     rating: 9.8,
     status: "completed",
     hoursPlayed: 120,
-    difficulty: "Medio",
+    difficulty: "Medium",
     coverUrl: "https://picsum.photos/300/400?random=5",
   },
   {
@@ -74,7 +74,7 @@ export const games = [
     rating: 9.1,
     status: "on-going",
     hoursPlayed: 25,
-    difficulty: "Facile",
+    difficulty: "Easy",
     coverUrl: "https://picsum.photos/300/400?random=6",
   },
   {
@@ -87,7 +87,7 @@ export const games = [
     rating: 7.9,
     status: "abbandoned",
     hoursPlayed: 60,
-    difficulty: "Medio",
+    difficulty: "Medium",
     coverUrl: "https://picsum.photos/300/400?random=7",
   },
   {
@@ -100,7 +100,7 @@ export const games = [
     rating: 9.0,
     status: "completed",
     hoursPlayed: 200,
-    difficulty: "Facile",
+    difficulty: "Easy",
     coverUrl: "https://picsum.photos/300/400?random=8",
   },
   {
@@ -113,7 +113,7 @@ export const games = [
     rating: 8.6,
     status: "wishlist",
     hoursPlayed: 0,
-    difficulty: "Medio",
+    difficulty: "Medium",
     coverUrl: "https://picsum.photos/300/400?random=9",
   },
   {
@@ -126,7 +126,7 @@ export const games = [
     rating: 8.1,
     status: "on-going",
     hoursPlayed: 50,
-    difficulty: "Difficile",
+    difficulty: "Hard",
     coverUrl: "https://picsum.photos/300/400?random=10",
   },
 ];
