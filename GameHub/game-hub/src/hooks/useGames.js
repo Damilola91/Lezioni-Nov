@@ -39,10 +39,10 @@ export default function useGames() {
       list.reduce((sum, g) => sum + g.rating, 0) / (list.length || 1);
 
     const statusCount = {
-      completato: list.filter((g) => g.status === "completed").length,
+      completed: list.filter((g) => g.status === "completed").length,
       "on-going": list.filter((g) => g.status === "on-going").length,
       wishlist: list.filter((g) => g.status === "wishlist").length,
-      abbandonato: list.filter((g) => g.status === "abbandoned").length,
+      abbandoned: list.filter((g) => g.status === "abbandoned").length,
     };
 
     return { totalHours, averageRating, statusCount };
