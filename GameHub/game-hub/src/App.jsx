@@ -1,8 +1,8 @@
 import "./App.css";
-import Header from "./components/Header/Header";
+import GameFilters from "./components/GameFilters/GameFilters";
 
 const App = () => {
-  return <Header />;
+  return <GameFilters />;
 };
 
 export default App;

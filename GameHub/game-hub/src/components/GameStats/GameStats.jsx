@@ -1,4 +1,4 @@
-const GameStats = () => {
+const GameStats = ({ stats, total, visible }) => {
   return <></>;
 };
 

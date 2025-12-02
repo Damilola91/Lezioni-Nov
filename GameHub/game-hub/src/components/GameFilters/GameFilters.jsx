@@ -18,6 +18,35 @@ const GameFilters = ({
         <option value="Sports">Sports</option>
         <option value="Platform">Platform</option>
       </select>
+
+      <select value={platform} onChange={(e) => setPlatform(e.target.value)}>
+        <option value="all">All Platforms</option>
+        <option value="PC"></option>
+        <option value="PlayStation"></option>
+        <option value="Xbox"></option>
+        <option value="Switch"></option>
+        <option value="Mobile"></option>
+      </select>
+
+      <label>
+        Minimum Rating: {minRating}
+        <input
+          type="range"
+          min="1"
+          max="10"
+          value={minRating}
+          onChange={(e) => setMinRating(Number(e.target.value))}
+        />
+      </label>
+
+      <label>
+        <input
+          type="checkbox"
+          checked={wishlist}
+          onChange={(e) => setWishlist(e.target.checked)}
+        />
+        Just wishlist
+      </label>
     </div>
   );
 };
