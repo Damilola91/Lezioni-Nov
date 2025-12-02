@@ -1,8 +1,8 @@
 import "./App.css";
-import GameFilters from "./components/GameFilters/GameFilters";
+import GameHubPage from "./components/Pages/GameHubPage/GameHubPage";
 
 const App = () => {
-  return <GameFilters />;
+  return <GameHubPage />;
 };
 
 export default App;

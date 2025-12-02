@@ -21,11 +21,11 @@ const GameFilters = ({
 
       <select value={platform} onChange={(e) => setPlatform(e.target.value)}>
         <option value="all">All Platforms</option>
-        <option value="PC"></option>
-        <option value="PlayStation"></option>
-        <option value="Xbox"></option>
-        <option value="Switch"></option>
-        <option value="Mobile"></option>
+        <option value="PC">PC</option>
+        <option value="PlayStation">PlayStation</option>
+        <option value="Xbox">Xbox</option>
+        <option value="Switch">Switch</option>
+        <option value="Mobile">Mobile</option>
       </select>
 
       <label>

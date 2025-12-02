@@ -1,0 +1,151 @@
+body {
+  background: #0b0b0f;
+  color: #fff;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.search {
+  padding: 6px 10px;
+  background: #111;
+  border: 1px solid #333;
+  border-radius: 8px;
+  color: white;
+}
+
+.badge {
+  background: #00ff88;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+}
+
+.tab {
+  background: #111;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  cursor: pointer;
+  color: white;
+}
+
+.tab.active {
+  border-color: #00ff88;
+  background: #004422;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Stats */
+.stats {
+  padding: 15px;
+  background: #111;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #222;
+}
+
+.stat-line {
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+/* Game grid */
+.grid {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: #111;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #00ff88;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.rating.green {
+  background: #00c853;
+}
+.rating.yellow {
+  background: #ffeb3b;
+  color: #000;
+}
+.rating.red {
+  background: #d50000;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: #333;
+}
+
+.badge.completed {
+  background: #00c853;
+}
+
+.badge.on-going {
+  background: #ffeb3b;
+}
+
+.badge.wishlist {
+  background: #2979ff;
+}
+.badge.abbandoned {
+  background: #616161;
+}
+
+.details {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.empty {
+  text-align: center;
+  padding: 30px;
+  color: #999;
+}
