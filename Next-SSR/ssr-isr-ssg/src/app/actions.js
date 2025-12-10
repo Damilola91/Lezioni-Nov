@@ -1,4 +1,5 @@
 "use server";
+import { revalidatePath } from "next/cache";
 
 export const createPost = async (formData) => {
   const title = formData.get("title");
@@ -13,6 +14,7 @@ export const createPost = async (formData) => {
   });
 
   const data = await res.json();
+  revalidatePath("/posts");
   console.log(data);
 
   return data;
